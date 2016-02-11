@@ -1,0 +1,36 @@
+<h1> Are you coming?</h1>
+
+<%= form_for @rsvp do |f| %>
+<div>
+  <%=f.label :first_name %>
+  <%=f.text_field :first_name %>
+</div>
+<div>
+  <%= f.label :last_name%>
+  <%= f.text_field :last_name%>
+</div>
+
+<div>
+  <%= f.label :attending%>
+  <%= f.check_box :attending%>
+
+</div>
+
+<div>
+    <%= f.label :vegetarian%>
+  <%= f.text_field :vegetarian%>
+</div>
+
+<div>
+    <%= f.label :guest%>
+  <%= f.text_field :guests%>
+</div>
+
+
+<div>
+  <%= f.submit %>
+</div>
+
+
+
+<% end %>
